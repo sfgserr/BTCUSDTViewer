@@ -8,5 +8,7 @@ namespace BinanceViewer.BTCUSDTServices
         Task<string> GetPriceFromKucoin();
 
         Task<string> GetPriceFromBybit();
+
+        Task<string> GetPriceFromMexc();
     }
 }

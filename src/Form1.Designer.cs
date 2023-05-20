@@ -34,6 +34,8 @@ partial class Form1
             this.kucoinPrice = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bybitPrice = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mexcPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -87,11 +89,30 @@ partial class Form1
             this.bybitPrice.Size = new System.Drawing.Size(0, 15);
             this.bybitPrice.TabIndex = 5;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(178, 253);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Mexc:";
+            // 
+            // mexcPrice
+            // 
+            this.mexcPrice.AutoSize = true;
+            this.mexcPrice.Location = new System.Drawing.Point(223, 253);
+            this.mexcPrice.Name = "mexcPrice";
+            this.mexcPrice.Size = new System.Drawing.Size(0, 15);
+            this.mexcPrice.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mexcPrice);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.bybitPrice);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.kucoinPrice);
@@ -114,4 +135,6 @@ partial class Form1
     private Label kucoinPrice;
     private Label label3;
     private Label bybitPrice;
+    private Label label4;
+    private Label mexcPrice;
 }
