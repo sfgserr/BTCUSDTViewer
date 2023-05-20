@@ -32,6 +32,8 @@ partial class Form1
             this.binancePrice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.kucoinPrice = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bybitPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -68,11 +70,30 @@ partial class Form1
             this.kucoinPrice.Size = new System.Drawing.Size(0, 15);
             this.kucoinPrice.TabIndex = 3;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(178, 214);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Bybit:";
+            // 
+            // bybitPrice
+            // 
+            this.bybitPrice.AutoSize = true;
+            this.bybitPrice.Location = new System.Drawing.Point(221, 214);
+            this.bybitPrice.Name = "bybitPrice";
+            this.bybitPrice.Size = new System.Drawing.Size(0, 15);
+            this.bybitPrice.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bybitPrice);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.kucoinPrice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.binancePrice);
@@ -91,4 +112,6 @@ partial class Form1
     private Label binancePrice;
     private Label label2;
     private Label kucoinPrice;
+    private Label label3;
+    private Label bybitPrice;
 }

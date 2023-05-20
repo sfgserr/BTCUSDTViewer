@@ -1,5 +1,6 @@
 ﻿using Binance.Net.Clients;
 using Kucoin.Net.Clients;
+using Bybit.Net.Clients;
 
 namespace BinanceViewer.BTCUSDTServices
 {
@@ -7,6 +8,7 @@ namespace BinanceViewer.BTCUSDTServices
     {
         private readonly BinanceClient _binanceClient = new BinanceClient();
         private readonly KucoinClient _kucoinClient = new KucoinClient();
+        private readonly BybitClient _bybitClient = new BybitClient();
 
         public async Task<string> GetPriceFromBinance()
         {
@@ -18,6 +20,12 @@ namespace BinanceViewer.BTCUSDTServices
         {
             var ticker = await _kucoinClient.SpotApi.ExchangeData.GetTickerAsync("BTC-USDT");
             return ticker.Data.BestAskPrice.ToString();
+        }
+
+        public async Task<string> GetPriceFromBybit()
+        {
+            var price = await _bybitClient.SpotApiV3.ExchangeData.GetPriceAsync("BTCUSDT");
+            return price.Data.Price.ToString();
         }
     }
 }

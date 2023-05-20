@@ -15,5 +15,6 @@ public partial class Form1 : Form
     {
         binancePrice.Text = await _btcusdtService.GetPriceFromBinance();
         kucoinPrice.Text = await _btcusdtService.GetPriceFromKucoin();
+        bybitPrice.Text = await _btcusdtService.GetPriceFromBybit();
     }
 }
