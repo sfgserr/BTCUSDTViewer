@@ -1,4 +1,4 @@
-﻿namespace BinanceViewer;
+﻿namespace BTUSDTViewer;
 
 partial class Form1
 {
@@ -137,4 +137,28 @@ partial class Form1
     private Label bybitPrice;
     private Label label4;
     private Label mexcPrice;
+
+    public Label BinancePrice
+    {
+        get => binancePrice;
+        private set => binancePrice = value;
+    }
+
+    public Label KucoinPrice
+    {
+        get => kucoinPrice;
+        private set => kucoinPrice = value;
+    }
+
+    public Label BybitPrice
+    {
+        get => bybitPrice;
+        private set => bybitPrice = value;
+    }
+
+    public Label MexcPrice
+    {
+        get => mexcPrice;
+        private set => mexcPrice = value;
+    }
 }

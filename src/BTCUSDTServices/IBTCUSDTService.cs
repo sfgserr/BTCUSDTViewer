@@ -1,5 +1,5 @@
 ﻿
-namespace BinanceViewer.BTCUSDTServices
+namespace BTUSDTViewer.BTCUSDTServices
 {
     interface IBTCUSDTService
     {

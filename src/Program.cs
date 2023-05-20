@@ -1,4 +1,4 @@
-namespace BinanceViewer;
+namespace BTUSDTViewer;
 
 static class Program
 {
